@@ -1,0 +1,35 @@
+@use '../../../../styles.scss' as *;
+
+.navbar{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    &__list{
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+    }
+    &__items{
+        width: fit-content;
+        height: fit-content;
+    }
+    &__links{
+        background-color: transparent;
+        display: grid;
+        place-items: center;
+        border: 2px solid $color-secondary;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        &:hover{
+            border: 2px solid $color-main;
+            &>img{
+                
+            }
+        }
+    }
+}
